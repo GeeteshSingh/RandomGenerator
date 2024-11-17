@@ -1,48 +1,50 @@
-* {
-    background-color: aquamarine;
+/*App.js styles*/
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
 }
 
-.App {
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container:hover {
+    background-color: #e0e0e0;
+}
+
+/*random css*/
+
+.joke-app {
     text-align: center;
-    margin-top: 15%;
+    padding: 20px;
 }
 
-.jokeSection {
-    font-family: "Arial Hebrew Scholar", serif;
-}
-
-input {
-    background: #f2f2f2;
-    padding: 12px;
-    margin: 2px;
-    border-radius: 7px;
-    border-color: black;
-    width: 250px;
-    font-size: 15px;
-    /*text-decoration-color: black;*/
-}
-
-.button {
-    display: inline-block;
-    padding: 15px 25px;
+.joke-app input {
+    padding: 10px;
     margin: 5px;
-    font-size: 20px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #225fd5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.joke-app button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
     border: none;
-    border-radius: 15px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.button:hover {
-    background-color: #0d289b
-}
-
-.button:active {
-    background-color: #225fd5;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+.joke-app h2 {
+    margin-top: 20px;
+    font-size: 18px;
 }
